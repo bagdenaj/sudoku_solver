@@ -51,7 +51,7 @@ def fill_sudoku():
 						sudoku[y][x] = 0
 				return
 	print(np.matrix(sudoku))
-	input('More?')
-
+	if input('Want another solution? [Yes] [No]') == 'No':
+		exit()
 
 print(fill_sudoku())
